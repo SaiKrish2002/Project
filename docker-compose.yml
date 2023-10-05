@@ -1,12 +1,12 @@
 version: "3"
 services:
   springBootApp:
-    image: njktemp0/user-service:1.1
+    image: saikrishna2002/project:1.0
     container_name: docker-postgres-springboot-app
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
     ports:
-      - "8081:8081"
+      - "8081:8085"
     networks:
       - network
     depends_on:
@@ -24,8 +24,8 @@ services:
       - volume:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=Blastotron@5211
-      - POSTGRES_DB=testdb
+      - POSTGRES_PASSWORD=Sai@2002
+      - POSTGRES_DB=postgres
 networks:
   network:
 volumes:
