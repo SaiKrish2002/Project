@@ -1,7 +1,7 @@
 version: "3"
 services:
   springBootApp:
-    image: saikrishna2002/project:1.0
+    image: saikrishna2002/project:1.1
     container_name: docker-postgres-springboot-app
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
