@@ -20,7 +20,7 @@ services:
     restart: on-failure
   
   postgresDb:
-    image: postgres:15
+    image: postgres:15.0
     container_name: docker-postgres-springboot-db
     ports:
       - "5432:5432"
