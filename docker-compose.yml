@@ -6,7 +6,7 @@ services:
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
       - SERVER_PORT=8085
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresDb:5432/postgres
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresDb:5432/one
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=Sai@2002
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
@@ -31,7 +31,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=Sai@2002
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=one
 networks:
   network:
 volumes:
